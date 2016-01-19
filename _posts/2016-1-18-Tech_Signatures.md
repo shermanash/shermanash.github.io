@@ -15,7 +15,7 @@ Our initial reaction was to find the stations with the highest traffic, but we s
 
 Our team eventually settled on using four factors to determine which stations to recommend.  The first was the average total weekly ridership for each station during a three month period (April-June 2015):
 
-*Note that you can pan these charts by click-dragging the mouse, and zoom with the +/- buttons in the top left corner. You can also type an address in the top right to drop a pin and center the map on the specified location.  Rolling over an area will reveal additional information.  Shoutout to [CartoDB](https://cartodb.com/)
+_Note that you can pan these charts by click-dragging the mouse, and zoom with the +/- buttons in the top left corner. You can also type an address in the top right to drop a pin and center the map on the specified location.  Rolling over an area will reveal additional information.  Shoutout to_ [CartoDB](https://cartodb.com/)
 <iframe width="100%" height="720" frameborder="0" src="https://shermanash.cartodb.com/viz/13a625ea-bbac-11e5-8168-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 After observing that nearly all the high volume stations were in Manhattan and Brooklyn, we decided to focus solely on these two boroughs for the rest of our analysis.  Then, we pulled data from [philanthropy.org](https://philanthropy.com/interactives/how-america-gives#zip/10016), containing adjusted gross income, median charitable contribution, population and demographic statistics for each zip code.  Ultimately we decided to use "Giving Ratio", (Median Contribution / Median AGI), as an indication of which zip codes would be most likely to donate:

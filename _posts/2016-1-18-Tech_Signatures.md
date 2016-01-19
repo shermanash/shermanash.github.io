@@ -9,7 +9,8 @@ published: true
 
 
 
-As an exercise in exploratory data analysis, we broke up into groups to obtain, digest, and analyze data in pursuit of our stated objective.  The goal was to use [MTA subway data](http://web.mta.info/developers/turnstile.html), and other sources, to determine where, and when, to optimally place workers in order to recruit potential donors to an event supporting increasing the participation of women in tech.
+
+As an exercise in exploratory data analysis, we broke up into groups to obtain, digest, and analyze data in pursuit of our stated objective.  The goal was to use [MTA subway data](http://web.mta.info/developers/turnstile.html), and other sources, to determine where, and when, to optimally place workers in order to recruit potential donors to an event supporting increasing the participation of women in technology.
 
 Our initial reaction was to find the stations with the highest traffic, but we soon realized that high-traffic stations would not necessarily net the most high-quality signatures.  For example, a high traffic station such as Times Square may contain a large number of tourists, who wouldn't be able to attend the Gala and donate.  Penn Station at 8:30 AM might have a ton of local commuters, who are also unwilling to stop and talk to our representatives.  We needed a way to determine how to balance high volume stations, with locations likely to yield quality signatures.
 

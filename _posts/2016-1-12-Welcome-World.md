@@ -27,7 +27,7 @@ To combine our selected features, we first layered them on top of each other to 
 <iframe width="100%" height="720" frameborder="0" src="https://shermanash.cartodb.com/viz/7656b866-bbb2-11e5-8ba7-0e674067d321/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 Then, we normalized the four features to values between 0 and 1, and multiplied them (weighted equally), resulting in a "Value" metric to determine the optimal station locations to target:
-<iframe width="100%" height="720" frameborder="0" src="https://shermanash.cartodb.com/viz/0e79a27a-bb1d-11e5-aff3-0e98b61680bf/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<iframe width="100%" height="520" frameborder="0" src="https://shermanash.cartodb.com/viz/0e79a27a-bb1d-11e5-aff3-0e98b61680bf/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 Finally, here is our list of top 10 value stations, along with their normalized scores for other metrics:
 ![Value_Real]({{site.baseurl}}/_posts/Value_Real.png)

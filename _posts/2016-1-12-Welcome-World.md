@@ -30,7 +30,8 @@ Then, we normalized the four features to values between 0 and 1, and multiplied 
 <iframe width="100%" height="520" frameborder="0" src="https://shermanash.cartodb.com/viz/0e79a27a-bb1d-11e5-aff3-0e98b61680bf/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
 Finally, here is our list of top 10 value stations, along with their normalized scores for other metrics:
-![Value_Real]({{site.baseurl}}/_posts/Value_Real.png)
+![Value_Real.png]({{site.baseurl}}/_posts/Value_Real.png)
+
 
 As peak travel times are weekdays during rush hours, we would recommend placing workers among those top stations during those times, probably more during the 5PM rush hour as people may be more likely to stop and chat on the way home than on the way into work.
 

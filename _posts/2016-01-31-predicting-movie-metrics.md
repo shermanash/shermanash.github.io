@@ -8,6 +8,9 @@ published: true
 
 
 
+
+THIS IS A TEST
+
 For our second project, we used linear regression to investigate predictions relating to the movie industry.  My initial idea centered around trying to predict the quality of a movie.  In some ways, predicting the imdb rating or metacritic score of a movie isn't entirely useful, as those ratings will nearly always be available as soon as the movie is released, but if we could make a model without using any time sensitive inputs, we could use it to estimate the hypothetical rating of any combination of director/actors.
 
 My initial idea was to use career averages for all the major players involved - director, writer, and cast, to see if there was a correlation between their previous body of work and their upcoming films.  So, if it was someone's third film, their "score" would be the average imdbrating of their first two films, if it was their 10th, I used the average of their first 9.  I gave some thought to weighting recent films higher than older ones, as its possible they would have more relevance to the quality of the next film produced, but ultimately decided to stick with the unweighted career average.  
@@ -17,7 +20,7 @@ This presented a problem when training the model, because if this was the first 
 A better solution, which I unfortunately did not have time to implement, would be to train multiple regression models- one to predict the imdb rating of a movie, and another to predict the imdbrating of the director, given the ratings of the other actors and writer.  Similar models could be made for all inputs, so that if we wanted to predict the rating of a movie directed by Martin Scorcese, starring Brad Pitt, Matt Damon, and Andrew Sherman-Ash, we would first estimate Sherman-Ash's imdb rating, then use it as input in the original model to estimate the movie's rating.
 
 The following is a correlation matrix of selected features versus imdbRating:
-![corr_matrix.png](https://github.com/shermanash/shermanash.github.io/tree/master/_posts/corr_matrix.png)
+![corr_matrix.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/corr_matrix.png)
 
 ![cast0_scatter.png]({{site.baseurl}}/_posts/cast0_scatter.png)
 ![cast0_scatter.png](/_posts/cast0_scatter.png)

@@ -1,8 +1,9 @@
 ---
 published: true
 layout: post
-title: "Predicting Movie Quality"
+title: Predicting Movie Quality
 ---
+
 
 
 
@@ -24,18 +25,13 @@ A better solution, which I unfortunately did not have time to implement, would b
 The following is a correlation matrix of selected features versus imdbRating:
 ![corr_matrix.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/corr_matrix.png)
 
-As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  Here is the scatter plot for director rating:
+As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  Below are scatter plots for director and lead actor:
 
 ![director_scatter2.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/director_scatter2.png)
-and for the lead actor:
 
 ![cast0_scatter.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/cast0_scatter.png)
 
-Finally, the results of the linear regression are shown below:
-![imdb_model.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/imdb_model.png)
-
-
-The adj. r-squared value shows the model does a decent job predicting imdbRating, using only director, cast0, cast1, and cast3.  It's interesting that cast3 (the 4th listed actor) makes the cut, while cast2 (and writer) had nearly no effect on the model.  This could be because cast3 better captures the depth of the cast, or because the effects of the writer and 3rd cast member are already captured among the other features.
+The model does a decent job predicting imdbRating, using only director, cast0, cast1, and cast3.  It's interesting that cast3 (the 4th listed actor) makes the cut, while cast2 (and writer) had nearly no effect on the model.  This could be because cast3 better captures the depth of the cast, or because the effects of the writer and 3rd cast member are already captured among the other features.
 
 Finally, here is a subset of top ranked recent movies on imdb, along with their ratings as predicted by the model (Chris Nolan 1-2-3-5!)
 ![imdb_RMSE_0.706.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/imdb_RMSE_0.706.png)
@@ -45,3 +41,6 @@ And here are the model's top predicted movies (sorry Noah!):
 
 As well as the model's predicted biggest flops (sorry Madhouse!):
 ![flops.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/flops.png)
+
+Finally, the results of the linear regression are shown below (warning: stat nerds only!):
+![imdb_model.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/imdb_model.png)

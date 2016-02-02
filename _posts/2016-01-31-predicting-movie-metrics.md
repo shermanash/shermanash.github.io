@@ -2,7 +2,10 @@
 published: true
 ---
 
-THIS IS A NEW TITLE
+
+
+
+
 
 
 For our second project, we used linear regression to investigate predictions relating to the movie industry.  My initial idea centered around trying to predict the quality of a movie.  In some ways, predicting the imdb rating or metacritic score of a movie isn't entirely useful, as those ratings will nearly always be available as soon as the movie is released, but if we could make a model without using any time sensitive inputs, we could use it to estimate the hypothetical rating of any combination of director/actors.

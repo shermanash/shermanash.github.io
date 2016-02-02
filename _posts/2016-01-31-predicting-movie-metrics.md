@@ -14,7 +14,7 @@ This presented a problem when training the model, because if this was the first 
 A better solution, which I unfortunately did not have time to implement, would be to train multiple regression models- one to predict the imdb rating of a movie, and another to predict the imdbrating of the director, given the ratings of the other actors and writer.  Similar models could be made for all inputs, so that if we wanted to predict the rating of a movie directed by Martin Scorcese, starring Brad Pitt, Matt Damon, and Andrew Sherman-Ash, we would first estimate Sherman-Ash's imdb rating, then use it as input in the original model to estimate the movie's rating.
 
 The following is a correlation matrix of selected features versus imdbRating:
-![corr_matrix.png]({{site.baseurl}}/_posts/corr_matrix.png)
+![corr_matrix.png](/_posts/corr_matrix.png)
 
 As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  Here is the scatter plot for director rating:
 ![director_scatter2.png]({{site.baseurl}}/_posts/director_scatter2.png)

@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 ---
+
 
 ## Predicting Movie Metrics
 
@@ -13,17 +14,26 @@ This presented a problem when training the model, because if this was the first 
 A better solution, which I unfortunately did not have time to implement, would be to train multiple regression models- one to predict the imdb rating of a movie, and another to predict the imdbrating of the director, given the ratings of the other actors and writer.  Similar models could be made for all inputs, so that if we wanted to predict the rating of a movie directed by Martin Scorcese, starring Brad Pitt, Matt Damon, and Andrew Sherman-Ash, we would first estimate Sherman-Ash's imdb rating, then use it as input in the original model to estimate the movie's rating.
 
 The following is a correlation matrix of selected features versus imdbRating:
+![corr_matrix.png]({{site.baseurl}}/_posts/corr_matrix.png)
 
-As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  These two features, versus imdbRating, are shown below:
+As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  Here is the scatter plot for director rating:
+![director_scatter2.png]({{site.baseurl}}/_posts/director_scatter2.png)
+and for the lead actor:
+![cast0_scatter.png]({{site.baseurl}}/_posts/cast0_scatter.png)
 
 Finally, the results of the linear regression are shown below:
-
-The adj. r-squared value shows the model does a decent job predicting imdbRating, using only director, cast0, cast1, and cast3.  It's interesting that cast3 (the 4th listed actor) makes the cut, while cast2 had nearly no effect on the model.  This could be because cast3 better captures the depth of the cast.
-
-Finally, here are the top ranked recent movies, as predicted by the model, alongside their actual ratings:
-
-And here are the top ![imdb_model.png]({{site.baseurl}}/_posts/imdb_model.png)
+![imdb_model.png]({{site.baseurl}}/_posts/imdb_model.png)
 
 
+The adj. r-squared value shows the model does a decent job predicting imdbRating, using only director, cast0, cast1, and cast3.  It's interesting that cast3 (the 4th listed actor) makes the cut, while cast2 (and writer) had nearly no effect on the model.  This could be because cast3 better captures the depth of the cast, or because the effects of the writer and 3rd cast member are already captured among the other features.
+
+Finally, here is a subset of the top ranked movies on imdb since 2013, along with their ratings as predicted by the model (Chris Nolan 1-2-3-5!)
+![imdb_RMSE_0.706.png]({{site.baseurl}}/_posts/imdb_RMSE_0.706.png)
+
+And here are the model's top predicted movies since 2013 (sorry Noah!):
+![imdb_RMSE_0.95.png]({{site.baseurl}}/_posts/imdb_RMSE_0.95.png)
+
+As well as the model's predicted biggest flops (sorry Madhouse!):
+![flops.png]({{site.baseurl}}/_posts/flops.png)
 
 

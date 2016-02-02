@@ -10,6 +10,7 @@ published: true
 
 
 
+
 For our second project, we used linear regression to investigate predictions relating to the movie industry.  My initial idea centered around trying to predict the quality of a movie.  In some ways, predicting the imdb rating or metacritic score of a movie isn't entirely useful, as those ratings will nearly always be available as soon as the movie is released, but if we could make a model without using any time sensitive inputs, we could use it to estimate the hypothetical rating of any combination of director/actors.
 
 My initial idea was to use career averages for all the major players involved - director, writer, and cast, to see if there was a correlation between their previous body of work and their upcoming films.  So, if it was someone's third film, their "score" would be the average imdbrating of their first two films, if it was their 10th, I used the average of their first 9.  I gave some thought to weighting recent films higher than older ones, as its possible they would have more relevance to the quality of the next film produced, but ultimately decided to stick with the unweighted career average.  

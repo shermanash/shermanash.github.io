@@ -27,10 +27,10 @@ Finally, the results of the linear regression are shown below:
 
 The adj. r-squared value shows the model does a decent job predicting imdbRating, using only director, cast0, cast1, and cast3.  It's interesting that cast3 (the 4th listed actor) makes the cut, while cast2 (and writer) had nearly no effect on the model.  This could be because cast3 better captures the depth of the cast, or because the effects of the writer and 3rd cast member are already captured among the other features.
 
-Finally, here is a subset of the top ranked movies on imdb since 2013, along with their ratings as predicted by the model (Chris Nolan 1-2-3-5!)
+Finally, here is a subset of top ranked recent movies on imdb, along with their ratings as predicted by the model (Chris Nolan 1-2-3-5!)
 ![imdb_RMSE_0.706.png](/_posts/imdb_RMSE_0.706.png)
 
-And here are the model's top predicted movies since 2013 (sorry Noah!):
+And here are the model's top predicted movies (sorry Noah!):
 ![imdb_RMSE_0.95.png](/_posts/imdb_RMSE_0.95.png)
 
 As well as the model's predicted biggest flops (sorry Madhouse!):

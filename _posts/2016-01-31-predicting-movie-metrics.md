@@ -25,8 +25,10 @@ The following is a correlation matrix of selected features versus imdbRating:
 ![corr_matrix.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/corr_matrix.png)
 
 As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  Here is the scatter plot for director rating:
+
 ![director_scatter2.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/director_scatter2.png)
 and for the lead actor:
+
 ![cast0_scatter.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/cast0_scatter.png)
 
 Finally, the results of the linear regression are shown below:

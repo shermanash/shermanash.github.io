@@ -25,7 +25,9 @@ A better solution, which I unfortunately did not have time to implement, would b
 The following is a correlation matrix of selected features versus imdbRating:
 ![corr_matrix.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/corr_matrix.png)
 
-As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  Below are scatter plots for director and lead actor:
+As we suspected, the average career ratings of the director and lead actors have a significant impact on the eventual imdbRating of the film.  We can see that metacritic rating and imdbVotes are also highly correlated, but we can't use those features for our model, since once we know the metacritic rating or number of votes for a movie, the imdbRating (what we are trying to predict), would already be known publicly.  Another possibly interesting note here is that the number of oscar nominations has almost no correlation with the rating- maybe the qualities valued in a movie differ greatly between imdb voters and the Academy. 
+
+Below are scatter plots for director and lead actor:
 
 ![director_scatter2.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/_posts/director_scatter2.png)
 

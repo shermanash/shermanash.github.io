@@ -10,5 +10,5 @@ Our latest project involved creating a predictive classification model from a re
 The dataset is comprised of patient information from medical institutes in 4 different locations- Cleveland (Ohio), Long Beach (California), Budapest (Hungary), and Zurich (Switzerland).  
 
 Many machine learning studies have been done using this data to predict the presence or absence of heart disease, and a sample of these studies are below:
-![corr_matrix.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/images/prev_studies.png)
+![prev_studies.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/images/prev_studies.png)
 

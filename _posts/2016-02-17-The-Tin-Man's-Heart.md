@@ -1,8 +1,9 @@
 ---
 published: true
 layout: post
-title: The Tin Man's Heart
+title: "The Tin Man's Heart"
 ---
+
 
 Our latest project involved creating a predictive classification model from a real life dataset.  Our team used a dataset relating to heart disease from the excellent [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/Heart+Disease).  
 
@@ -21,4 +22,4 @@ After selecting features, I used [BigML](https://bigml.com/) to create a network
 ![Net2.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Net2.png)
 ![Net4.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Net4.png)
 ![Net5.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Net5.png)
-
+![network.gif](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/network.gif)

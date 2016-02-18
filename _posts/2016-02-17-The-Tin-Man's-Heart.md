@@ -1,9 +1,5 @@
 ---
 published: true
----
-
----
-published: true
 layout: post
 title: The Tin Man's Heart
 ---

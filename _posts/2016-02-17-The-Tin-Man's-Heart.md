@@ -26,7 +26,15 @@ After selecting features, I used [BigML](https://bigml.com/) to create a network
 ![network.gif](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/network.gif)
 
 Next, I used BigML to create a decision tree.
-<iframe src="https://bigml.com/embedded/model/c3PhwxuqgNIPkx6pzxlwl7Wg05e" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" width="600" height="400"></iframe>
+<iframe src="https://bigml.com/embedded/model/c3PhwxuqgNIPkx6pzxlwl7Wg05e" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" width="800" height="400"></iframe>
 
-The visualization is nice, but the accuracy wasn't as good as the fine-tuned logistic regression model from SKLearn:
+The visualization is nice, but the accuracy wasn't as good as the fine-tuned logistic regression model from SKLearn.
+BigML-
+![BigML_Confusion.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/BigML_Confusion.png)
+SKLearn-
+![SVC_Confusion.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/SVC_Confusion.png)
+As the ROC Curve of the SKLearn model demonstrates, the model does a decent job predicting the presence of heart disease.
+![Svc_ROC.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Svc_ROC.png)
+
+Since the model only uses features that anyone could estimate, a natural extension of this project would be to create a live prediction model.  This model is currently hosted on my local machine.
 

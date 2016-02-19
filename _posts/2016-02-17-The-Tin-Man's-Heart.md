@@ -18,9 +18,9 @@ Many machine learning studies have been done using this data to predict the pres
 
 ![prev_studies.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/prev_studies.png)
 
-My goal was to create a model that used only features that could feasibly be known by a patient before they stepped foot in a hospital, to assess their risk factor for heart disease, and retain an accuracy score on par with the previous studies.
+My goal was to create a model that used only features that could feasibly be known by a patient before they stepped foot in a hospital, to assess their risk factor for heart disease, and retain an accuracy score on par with the previous studies. After paring down the 50 features to about 10 or so that could conceivably be known to anyone, I then settled on 8 features that had the most impact on model performance.  I was trying to strike a balance between having a small number of features to make the model easy to use, and having enough features to have a reliable accuracy.
 
-After selecting features, I used [BigML](https://bigml.com/) to create a network graph illustrating the main relationships in the data.  These are shown below.
+I used [BigML](https://bigml.com/) to create a network graph illustrating the main relationships in the data.  These are shown below.
 
 ![Net1.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Net1.png)
 ![Net2.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Net2.png)

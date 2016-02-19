@@ -8,6 +8,7 @@ title: "The Tin Man's Heart"
 
 
 
+
 Our latest project involved creating a predictive classification model from a real life dataset.  Our team used a dataset relating to heart disease from the excellent [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/Heart+Disease).  
 
 The dataset is comprised of patient information from medical institutes in 4 different locations- Cleveland (Ohio), Long Beach (California), Budapest (Hungary), and Zurich (Switzerland).  
@@ -27,7 +28,11 @@ After selecting features, I used [BigML](https://bigml.com/) to create a network
 ![Net5.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Net5.png)
 ![network.gif](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/network.gif)
 
-Next, I used BigML to create a decision tree.
+Next, I used BigML to create a decision tree.  Here is an aggressively pruned tree that only uses 4 features, and has an accuracy of 70%:
+<iframe src="https://bigml.com/embedded/model/pJsPoBVcF2jbTsvtGZLg1mQE6Wj" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" width="600" height="400"></iframe>
+
+
+And here is another tree, using all of the features, with an improved accuracy score, but a similar overall structure:
 <iframe src="https://bigml.com/embedded/model/c3PhwxuqgNIPkx6pzxlwl7Wg05e" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" width="800" height="400"></iframe>
 
 The visualization is nice, but the accuracy wasn't as good as the models built in [SKLearn](http://scikit-learn.org/stable/)

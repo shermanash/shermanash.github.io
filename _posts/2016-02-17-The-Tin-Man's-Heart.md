@@ -9,6 +9,7 @@ title: "The Tin Man's Heart"
 
 
 
+
 Our latest project involved creating a predictive classification model from a real life dataset.  Our team used a dataset relating to heart disease from the excellent [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/Heart+Disease).  
 
 The dataset is comprised of patient information from medical institutes in 4 different locations- Cleveland (Ohio), Long Beach (California), Budapest (Hungary), and Zurich (Switzerland).  
@@ -46,6 +47,5 @@ As the ROC Curve, and confusion matrix below demonstrate, the model does a decen
 ![Svc_ROC.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/Svc_ROC.png)
 ![SVC_Confusion.png](https://raw.githubusercontent.com/shermanash/shermanash.github.io/master/images/SVC_Confusion.png)
 
-Since the model only uses features that anyone could estimate, a natural extension of this project would be to create a live prediction model.  This model is currently hosted on my local machine.
-
-Soon, I hope to have the model hosted live on the internet, with sliders and a cleaner design.
+Since the model only uses features that anyone could estimate, a natural extension of this project would be to create a live prediction model.  This model is currently hosted live on heroku here:
+[Heart Disease Predictor](https://heartdisease.herokuapp.com)
